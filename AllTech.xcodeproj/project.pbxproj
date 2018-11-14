@@ -19,6 +19,7 @@
 		624AF673214F3997002C7B43 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624AF672214F3997002C7B43 /* FavoriteViewController.swift */; };
 		624AF675214F39D0002C7B43 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624AF674214F39D0002C7B43 /* InfoViewController.swift */; };
 		62B653782150463E004B58F2 /* CVModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B653772150463E004B58F2 /* CVModel.swift */; };
+		62E44AB6216EE1D500E27691 /* TableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E44AB5216EE1D500E27691 /* TableViewHeader.swift */; };
 		62F3642121659DAF003A9718 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F3642021659DAF003A9718 /* DetailsViewController.swift */; };
 		62F364232165B646003A9718 /* TVService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F364222165B646003A9718 /* TVService.swift */; };
 		62F364272165C19C003A9718 /* TVModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F364262165C19C003A9718 /* TVModel.swift */; };
@@ -46,6 +47,7 @@
 		624AF672214F3997002C7B43 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		624AF674214F39D0002C7B43 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		62B653772150463E004B58F2 /* CVModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVModel.swift; sourceTree = "<group>"; };
+		62E44AB5216EE1D500E27691 /* TableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHeader.swift; sourceTree = "<group>"; };
 		62F3642021659DAF003A9718 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		62F364222165B646003A9718 /* TVService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVService.swift; sourceTree = "<group>"; };
 		62F364262165C19C003A9718 /* TVModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVModel.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 			children = (
 				62FD779A215168F200CD237C /* CVCell.swift */,
 				62FD234C215DB7630060E906 /* TVCell.swift */,
+				62E44AB5216EE1D500E27691 /* TableViewHeader.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				62FD234D215DB7630060E906 /* TVCell.swift in Sources */,
 				62B653782150463E004B58F2 /* CVModel.swift in Sources */,
 				62F364232165B646003A9718 /* TVService.swift in Sources */,
+				62E44AB6216EE1D500E27691 /* TableViewHeader.swift in Sources */,
 				62FD779B215168F200CD237C /* CVCell.swift in Sources */,
 				62FD779D2151707A00CD237C /* UPCarouselFlowLayout.swift in Sources */,
 				624AF673214F3997002C7B43 /* FavoriteViewController.swift in Sources */,

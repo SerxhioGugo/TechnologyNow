@@ -8,7 +8,7 @@
 
 import Foundation
 
-class CVService: NSObject {
+class CVService {
     
     static let shared = CVService()
     private let baseUrl = "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=fe79aa80ed7b49f5bdf68592100a2b96"

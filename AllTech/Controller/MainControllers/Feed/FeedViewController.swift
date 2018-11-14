@@ -110,6 +110,7 @@ class FeedViewController: UIViewController{
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.separatorColor = UIColor(red: 0, green: 0.6471, blue: 0.3843, alpha: 1.0)
         tableView.separatorStyle = .singleLine
+        tableView.tableHeaderView = TableViewHeader(frame: CGRect(x: 0, y: 0, width: 0, height: 50))
         return tableView
     }()
         
@@ -161,22 +162,14 @@ extension FeedViewController:  UICollectionViewDelegateFlowLayout, UICollectionV
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        let articlesURL = URL(string: self.cvArticles[indexPath.item].url)
-//
-//        let safariVC = SFSafariViewController(url: articlesURL!)
-//        safariVC.delegate = self as? SFSafariViewControllerDelegate
-//        safariVC.preferredControlTintColor = UIColor(red: 0, green: 0.6471, blue: 0.3843, alpha: 1.0)
-//        self.present(safariVC, animated: true , completion: nil)
+
+        let articlesURL = URL(string: self.cvArticles[indexPath.row].url)
         
-        let detailVC = DetailsViewController()
-        detailVC.authorLabel = cvArticles[indexPath.item].author
-        
-//        expandCVViewController.authorName = cvArticles[indexPath.item].author
-//        expandCVViewController.titles = cvArticles[indexPath.item].title
-//        expandCVViewController.date = cvArticles[indexPath.item].publishedAt
-//        let resource = ImageResource(downloadURL: URL(string: cvArticles[indexPath.row].urlToImage)!, cacheKey: cvArticles[indexPath.row].urlToImage)
-        
-        self.navigationController?.pushViewController(detailVC, animated: true)
+        let safariVC = SFSafariViewController(url: articlesURL!)
+        safariVC.delegate = self as? SFSafariViewControllerDelegate
+        safariVC.preferredControlTintColor = UIColor(red: 0, green: 0.6471, blue: 0.3843, alpha: 1.0)
+        self.present(safariVC, animated: true , completion: nil)
+
     }
     
     //UICollectionViewDelegateFlowLayout Methods

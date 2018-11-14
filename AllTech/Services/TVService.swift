@@ -8,11 +8,12 @@
 
 import Foundation
 
-class TVService: NSObject {
+class TVService {
     
     static let shared = TVService()
-    private let baseURL = "https://newsapi.org/v2/everything?q=techcrunch&sortBy=popularity&apiKey=fe79aa80ed7b49f5bdf68592100a2b96"
-    
+    private let baseURL = "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=fe79aa80ed7b49f5bdf68592100a2b96"
+    //https://newsapi.org/v2/everything?q=technology&sortBy=popularity&apiKey=fe79aa80ed7b49f5bdf68592100a2b96
+    //"https://newsapi.org/v2/everything?q=techcrunch&sortBy=popularity&apiKey=fe79aa80ed7b49f5bdf68592100a2b96"
     func fetchNewsForTV(completion: @escaping (TVModel?, Error?) -> ()) {
         
         guard let url = URL(string: baseURL) else { return }
